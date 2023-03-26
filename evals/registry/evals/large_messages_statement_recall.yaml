@@ -1,0 +1,9 @@
+large_messages_statement_recall:
+  id: large_messages_statement_recall.dev.v0
+  metrics: [accuracy]
+  description: Test the model's ability to accurately recall statements located at various positions within lengthy messages, with a focus on understanding the impact of message length on the model's overall recall performance.
+
+large_messages_statement_recall.dev.v0:
+  class: evals.elsuite.basic.match:Match
+  args:
+    samples_jsonl: large_messages_statement_recall/samples.jsonl
